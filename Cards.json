@@ -1,0 +1,102 @@
+|   # | Situation                                          | Bad Luck Index |
+| --: | -------------------------------------------------- | -------------- |
+|   1 | Salt shaker is empty during lunch                  | 1.0            |
+|   2 | Coffee machine breaks for 10 mins                  | 1.5            |
+|   3 | A customer complains about slow Wi-Fi              | 2.0            |
+|   4 | Forgot to restock napkins                          | 2.5            |
+|   5 | Credit card reader reboots mid-payment             | 3.0            |
+|   6 | Spill on the floor during service                  | 3.5            |
+|   7 | Staff shows up late                                | 4.0            |
+|   8 | Overcooked one steak                               | 4.5            |
+|   9 | Someone left the fridge slightly open              | 5.0            |
+|  10 | Minor social media complaint                       | 5.5            |
+|  11 | Oven takes too long to heat up                     | 6.0            |
+|  12 | Ran out of ketchup                                 | 6.5            |
+|  13 | Printer jam on receipt machine                     | 7.0            |
+|  14 | A mouse spotted outside                            | 7.5            |
+|  15 | Forgot one reservation                             | 8.0            |
+|  16 | Staff member sneezes near food                     | 8.5            |
+|  17 | Broken chair during service                        | 9.0            |
+|  18 | Small gas leak detected (fixed quickly)            | 9.5            |
+|  19 | Soup too salty                                     | 10.0           |
+|  20 | Dishwasher breaks mid-shift                        | 10.5           |
+|  21 | No-show from food delivery                         | 11.0           |
+|  22 | Kitchen staff argument                             | 11.5           |
+|  23 | Water pipe leak in the restroom                    | 12.0           |
+|  24 | Power flicker during lunch rush                    | 12.5           |
+|  25 | Lost internet during online orders                 | 13.0           |
+|  26 | Incorrect allergy information given (no harm done) | 13.5           |
+|  27 | Staff quits mid-shift                              | 14.0           |
+|  28 | Negative Yelp review goes viral                    | 14.5           |
+|  29 | Trash pickup delayed by a day                      | 15.0           |
+|  30 | Health inspector walks in unannounced              | 15.5           |
+|  31 | Freezer stops working for 30 minutes               | 16.0           |
+|  32 | Kitchen fire alarm malfunction                     | 16.5           |
+|  33 | Kid throws up in dining area                       | 17.0           |
+|  34 | Sink gets clogged mid-service                      | 17.5           |
+|  35 | Wine glass shortage                                | 18.0           |
+|  36 | Mold discovered in storage room                    | 18.5           |
+|  37 | Minor injury to a cook (small cut)                 | 19.0           |
+|  38 | Rodent spotted in kitchen (no contact)             | 19.5           |
+|  39 | Sudden water cut-off                               | 20.0           |
+|  40 | Local competitor copies your dish                  | 20.5           |
+|  41 | Angry vegan protest outside                        | 21.0           |
+|  42 | Cold food returned by multiple guests              | 21.5           |
+|  43 | AC stops working in July                           | 22.0           |
+|  44 | Grease trap overflow                               | 22.5           |
+|  45 | Staff caught vaping in back                        | 23.0           |
+|  46 | Food delivery accident delays restocking           | 23.5           |
+|  47 | Oil fire in the fryer (quickly extinguished)       | 24.0           |
+|  48 | Video of kitchen mess circulates online            | 24.5           |
+|  49 | Run out of popular menu item                       | 25.0           |
+|  50 | Chef walks out before dinner service               | 25.5           |
+|  51 | Critical online review from food blogger           | 26.0           |
+|  52 | Roof leak in dining room                           | 26.5           |
+|  53 | Infestation discovered during inspection           | 27.0           |
+|  54 | Raw chicken served accidentally                    | 27.5           |
+|  55 | Gas leak requires evacuation                       | 28.0           |
+|  56 | Double booking during weekend dinner               | 28.5           |
+|  57 | Key supplier goes bankrupt                         | 29.0           |
+|  58 | Food poisoning report (no confirmation)            | 29.5           |
+|  59 | Multiple staff sick before busy day                | 30.0           |
+|  60 | Sewer backup in the kitchen                        | 30.5           |
+|  61 | Online platform suspends your account              | 31.0           |
+|  62 | Former staff leaks internal drama online           | 31.5           |
+|  63 | Live roach in a customer’s food                    | 32.0           |
+|  64 | Major appliance breaks down                        | 32.5           |
+|  65 | Frozen pipe bursts during winter                   | 33.0           |
+|  66 | Sued over alleged allergic reaction                | 33.5           |
+|  67 | Staff arrested before shift                        | 34.0           |
+|  68 | Blackout mid-service                               | 34.5           |
+|  69 | Major online boycott campaign                      | 35.0           |
+|  70 | Structural damage found in walls                   | 35.5           |
+|  71 | Tax audit reveals missing documents                | 36.0           |
+|  72 | Legal threat from former partner                   | 36.5           |
+|  73 | Rent suddenly increased by 50%                     | 37.0           |
+|  74 | Pest control finds major infestation               | 37.5           |
+|  75 | City shuts down water to the building              | 38.0           |
+|  76 | Chef involved in scandal                           | 38.5           |
+|  77 | Staff accuses manager of misconduct                | 39.0           |
+|  78 | Major kitchen fire (nobody hurt)                   | 39.5           |
+|  79 | Health score downgraded publicly                   | 40.0           |
+|  80 | Sewer flooding damages the basement                | 40.5           |
+|  81 | Roof collapses during storm (no injuries)          | 41.0           |
+|  82 | Food poisoning confirmed                           | 41.5           |
+|  83 | Staff strike on busiest day                        | 42.0           |
+|  84 | Hacker deletes online booking data                 | 42.5           |
+|  85 | Fire damages entire kitchen                        | 43.0           |
+|  86 | Lawsuit from customer injury                       | 43.5           |
+|  87 | Bank account frozen due to error                   | 44.0           |
+|  88 | Rodents found in food storage                      | 44.5           |
+|  89 | Local TV exposes your restaurant’s hygiene         | 45.0           |
+|  90 | Health department closes you down                  | 45.5           |
+|  91 | Major plumbing collapse                            | 46.0           |
+|  92 | Social media scandal ruins brand                   | 46.5           |
+|  93 | Fire burns down restaurant                         | 47.0           |
+|  94 | Sued for wage theft (even if false)                | 47.5           |
+|  95 | Ingredient recall shuts down menu                  | 48.0           |
+|  96 | Lease terminated without warning                   | 48.5           |
+|  97 | All kitchen staff quits at once                    | 49.0           |
+|  98 | Flood destroys interior                            | 49.5           |
+|  99 | Entire business permanently shut down              | 50.0           |
+| 100 | You lose everything and have to start over         | 100.0          |
