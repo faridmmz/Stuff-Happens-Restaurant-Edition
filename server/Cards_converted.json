@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "name": "Salt shaker is empty during lunch",
+    "bad_luck_index": 1.0,
+    "image": "01.png"
+  },
+  {
+    "id": 2,
+    "name": "Coffee machine breaks for 10 mins",
+    "bad_luck_index": 1.5,
+    "image": "02.png"
+  },
+  {
+    "id": 3,
+    "name": "A customer complains about slow Wi-Fi",
+    "bad_luck_index": 2.0,
+    "image": "03.png"
+  },
+  {
+    "id": 4,
+    "name": "Forgot to restock napkins",
+    "bad_luck_index": 2.5,
+    "image": "04.png"
+  },
+  {
+    "id": 5,
+    "name": "Credit card reader reboots mid-payment",
+    "bad_luck_index": 3.0,
+    "image": "05.png"
+  },
+  {
+    "id": 6,
+    "name": "Spill on the floor during service",
+    "bad_luck_index": 3.5,
+    "image": "06.png"
+  },
+  {
+    "id": 7,
+    "name": "Staff shows up late",
+    "bad_luck_index": 4.0,
+    "image": "07.png"
+  },
+  {
+    "id": 8,
+    "name": "Overcooked one steak",
+    "bad_luck_index": 4.5,
+    "image": "08.png"
+  },
+  {
+    "id": 9,
+    "name": "Someone left the fridge slightly open",
+    "bad_luck_index": 5.0,
+    "image": "09.png"
+  },
+  {
+    "id": 10,
+    "name": "Minor social media complaint",
+    "bad_luck_index": 5.5,
+    "image": "10.png"
+  },
+  {
+    "id": 11,
+    "name": "Oven takes too long to heat up",
+    "bad_luck_index": 6.0,
+    "image": "11.png"
+  },
+  {
+    "id": 12,
+    "name": "Ran out of ketchup",
+    "bad_luck_index": 6.5,
+    "image": "12.png"
+  },
+  {
+    "id": 13,
+    "name": "Printer jam on receipt machine",
+    "bad_luck_index": 7.0,
+    "image": "13.png"
+  },
+  {
+    "id": 14,
+    "name": "A mouse spotted outside",
+    "bad_luck_index": 7.5,
+    "image": "14.png"
+  },
+  {
+    "id": 15,
+    "name": "Forgot one reservation",
+    "bad_luck_index": 8.0,
+    "image": "15.png"
+  },
+  {
+    "id": 16,
+    "name": "Staff member sneezes near food",
+    "bad_luck_index": 8.5,
+    "image": "16.png"
+  },
+  {
+    "id": 17,
+    "name": "Broken chair during service",
+    "bad_luck_index": 9.0,
+    "image": "17.png"
+  },
+  {
+    "id": 18,
+    "name": "Small gas leak detected (fixed quickly)",
+    "bad_luck_index": 9.5,
+    "image": "18.png"
+  },
+  {
+    "id": 19,
+    "name": "Soup too salty",
+    "bad_luck_index": 10.0,
+    "image": "19.png"
+  },
+  {
+    "id": 20,
+    "name": "Dishwasher breaks mid-shift",
+    "bad_luck_index": 10.5,
+    "image": "20.png"
+  },
+  {
+    "id": 21,
+    "name": "No-show from food delivery",
+    "bad_luck_index": 11.0,
+    "image": "21.png"
+  },
+  {
+    "id": 22,
+    "name": "Kitchen staff argument",
+    "bad_luck_index": 11.5,
+    "image": "22.png"
+  },
+  {
+    "id": 23,
+    "name": "Water pipe leak in the restroom",
+    "bad_luck_index": 12.0,
+    "image": "23.png"
+  },
+  {
+    "id": 24,
+    "name": "Power flicker during lunch rush",
+    "bad_luck_index": 12.5,
+    "image": "24.png"
+  },
+  {
+    "id": 25,
+    "name": "Lost internet during online orders",
+    "bad_luck_index": 13.0,
+    "image": "25.png"
+  },
+  {
+    "id": 26,
+    "name": "Incorrect allergy information given (no harm done)",
+    "bad_luck_index": 13.5,
+    "image": "26.png"
+  },
+  {
+    "id": 27,
+    "name": "Staff quits mid-shift",
+    "bad_luck_index": 14.0,
+    "image": "27.png"
+  },
+  {
+    "id": 28,
+    "name": "Negative Yelp review goes viral",
+    "bad_luck_index": 14.5,
+    "image": "28.png"
+  },
+  {
+    "id": 29,
+    "name": "Trash pickup delayed by a day",
+    "bad_luck_index": 15.0,
+    "image": "29.png"
+  },
+  {
+    "id": 30,
+    "name": "Health inspector walks in unannounced",
+    "bad_luck_index": 15.5,
+    "image": "30.png"
+  },
+  {
+    "id": 31,
+    "name": "Freezer stops working for 30 minutes",
+    "bad_luck_index": 16.0,
+    "image": "31.png"
+  },
+  {
+    "id": 32,
+    "name": "Kitchen fire alarm malfunction",
+    "bad_luck_index": 16.5,
+    "image": "32.png"
+  },
+  {
+    "id": 33,
+    "name": "Kid throws up in dining area",
+    "bad_luck_index": 17.0,
+    "image": "33.png"
+  },
+  {
+    "id": 34,
+    "name": "Sink gets clogged mid-service",
+    "bad_luck_index": 17.5,
+    "image": "34.png"
+  },
+  {
+    "id": 35,
+    "name": "Wine glass shortage",
+    "bad_luck_index": 18.0,
+    "image": "35.png"
+  },
+  {
+    "id": 36,
+    "name": "Mold discovered in storage room",
+    "bad_luck_index": 18.5,
+    "image": "36.png"
+  },
+  {
+    "id": 37,
+    "name": "Minor injury to a cook (small cut)",
+    "bad_luck_index": 19.0,
+    "image": "37.png"
+  },
+  {
+    "id": 38,
+    "name": "Rodent spotted in kitchen (no contact)",
+    "bad_luck_index": 19.5,
+    "image": "38.png"
+  },
+  {
+    "id": 39,
+    "name": "Sudden water cut-off",
+    "bad_luck_index": 20.0,
+    "image": "39.png"
+  },
+  {
+    "id": 40,
+    "name": "Local competitor copies your dish",
+    "bad_luck_index": 20.5,
+    "image": "40.png"
+  },
+  {
+    "id": 41,
+    "name": "Angry vegan protest outside",
+    "bad_luck_index": 21.0,
+    "image": "41.png"
+  },
+  {
+    "id": 42,
+    "name": "Cold food returned by multiple guests",
+    "bad_luck_index": 21.5,
+    "image": "42.png"
+  },
+  {
+    "id": 43,
+    "name": "AC stops working in July",
+    "bad_luck_index": 22.0,
+    "image": "43.png"
+  },
+  {
+    "id": 44,
+    "name": "Grease trap overflow",
+    "bad_luck_index": 22.5,
+    "image": "44.png"
+  },
+  {
+    "id": 45,
+    "name": "Video of kitchen mess circulates online",
+    "bad_luck_index": 23.0,
+    "image": "45.png"
+  },
+  {
+    "id": 46,
+    "name": "Oil fire in the fryer (quickly extinguished)",
+    "bad_luck_index": 23.5,
+    "image": "46.png"
+  },
+  {
+    "id": 47,
+    "name": "Staff caught vaping in back",
+    "bad_luck_index": 24.0,
+    "image": "47.png"
+  },
+  {
+    "id": 48,
+    "name": "Food delivery accident delays restocking",
+    "bad_luck_index": 24.5,
+    "image": "48.png"
+  },
+  {
+    "id": 49,
+    "name": "Run out of popular menu item",
+    "bad_luck_index": 25.0,
+    "image": "49.png"
+  },
+  {
+    "id": 50,
+    "name": "Chef walks out before dinner service",
+    "bad_luck_index": 25.5,
+    "image": "50.png"
+  },
+  {
+    "id": 51,
+    "name": "Critical online review from food blogger",
+    "bad_luck_index": 26.0,
+    "image": "51.png"
+  },
+  {
+    "id": 52,
+    "name": "Roof leak in dining room",
+    "bad_luck_index": 26.5,
+    "image": "52.png"
+  },
+  {
+    "id": 53,
+    "name": "Infestation discovered during inspection",
+    "bad_luck_index": 27.0,
+    "image": "53.png"
+  },
+  {
+    "id": 54,
+    "name": "Raw chicken served accidentally",
+    "bad_luck_index": 27.5,
+    "image": "54.png"
+  },
+  {
+    "id": 55,
+    "name": "Gas leak requires evacuation",
+    "bad_luck_index": 28.0,
+    "image": "55.png"
+  },
+  {
+    "id": 56,
+    "name": "Double booking during weekend dinner",
+    "bad_luck_index": 28.5,
+    "image": "56.png"
+  },
+  {
+    "id": 57,
+    "name": "Multiple staff sick before busy day",
+    "bad_luck_index": 29.0,
+    "image": "57.png"
+  },
+  {
+    "id": 58,
+    "name": "Sewer backup in the kitchen",
+    "bad_luck_index": 29.5,
+    "image": "58.png"
+  },
+  {
+    "id": 59,
+    "name": "Food poisoning report (no confirmation)",
+    "bad_luck_index": 30.0,
+    "image": "59.png"
+  },
+  {
+    "id": 60,
+    "name": "Key supplier goes bankrupt",
+    "bad_luck_index": 30.5,
+    "image": "60.png"
+  },
+  {
+    "id": 61,
+    "name": "Online platform suspends your account",
+    "bad_luck_index": 31.0,
+    "image": "61.png"
+  },
+  {
+    "id": 62,
+    "name": "Former staff leaks internal drama online",
+    "bad_luck_index": 31.5,
+    "image": "62.png"
+  },
+  {
+    "id": 63,
+    "name": "Live roach in a customer\u2019s food",
+    "bad_luck_index": 32.0,
+    "image": "63.png"
+  },
+  {
+    "id": 64,
+    "name": "Major appliance breaks down",
+    "bad_luck_index": 32.5,
+    "image": "64.png"
+  },
+  {
+    "id": 65,
+    "name": "Staff arrested before shift",
+    "bad_luck_index": 33.0,
+    "image": "65.png"
+  },
+  {
+    "id": 66,
+    "name": "Blackout mid-service",
+    "bad_luck_index": 33.5,
+    "image": "66.png"
+  },
+  {
+    "id": 67,
+    "name": "Sued over alleged allergic reaction",
+    "bad_luck_index": 34.0,
+    "image": "67.png"
+  },
+  {
+    "id": 68,
+    "name": "Frozen pipe bursts during winter",
+    "bad_luck_index": 34.5,
+    "image": "68.png"
+  },
+  {
+    "id": 69,
+    "name": "Major online boycott campaign",
+    "bad_luck_index": 35.0,
+    "image": "69.png"
+  },
+  {
+    "id": 70,
+    "name": "Structural damage found in walls",
+    "bad_luck_index": 35.5,
+    "image": "70.png"
+  },
+  {
+    "id": 71,
+    "name": "Tax audit reveals missing documents",
+    "bad_luck_index": 36.0,
+    "image": "71.png"
+  },
+  {
+    "id": 72,
+    "name": "Legal threat from former partner",
+    "bad_luck_index": 36.5,
+    "image": "72.png"
+  },
+  {
+    "id": 73,
+    "name": "City shuts down water to the building",
+    "bad_luck_index": 37.0,
+    "image": "73.png"
+  },
+  {
+    "id": 74,
+    "name": "Chef involved in scandal",
+    "bad_luck_index": 37.5,
+    "image": "74.png"
+  },
+  {
+    "id": 75,
+    "name": "Pest control finds major infestation",
+    "bad_luck_index": 38.0,
+    "image": "75.png"
+  },
+  {
+    "id": 76,
+    "name": "Rent suddenly increased by 50%",
+    "bad_luck_index": 38.5,
+    "image": "76.png"
+  },
+  {
+    "id": 77,
+    "name": "Staff accuses manager of misconduct",
+    "bad_luck_index": 39.0,
+    "image": "77.png"
+  },
+  {
+    "id": 78,
+    "name": "Major kitchen fire (nobody hurt)",
+    "bad_luck_index": 39.5,
+    "image": "78.png"
+  },
+  {
+    "id": 79,
+    "name": "Health score downgraded publicly",
+    "bad_luck_index": 40.0,
+    "image": "79.png"
+  },
+  {
+    "id": 80,
+    "name": "Sewer flooding damages the basement",
+    "bad_luck_index": 40.5,
+    "image": "80.png"
+  },
+  {
+    "id": 81,
+    "name": "Roof collapses during storm (no injuries)",
+    "bad_luck_index": 41.0,
+    "image": "81.png"
+  },
+  {
+    "id": 82,
+    "name": "Food poisoning confirmed",
+    "bad_luck_index": 41.5,
+    "image": "82.png"
+  },
+  {
+    "id": 83,
+    "name": "Staff strike on busiest day",
+    "bad_luck_index": 42.0,
+    "image": "83.png"
+  },
+  {
+    "id": 84,
+    "name": "Hacker deletes online booking data",
+    "bad_luck_index": 42.5,
+    "image": "84.png"
+  },
+  {
+    "id": 85,
+    "name": "Fire damages entire kitchen",
+    "bad_luck_index": 43.0,
+    "image": "85.png"
+  },
+  {
+    "id": 86,
+    "name": "Lawsuit from customer injury",
+    "bad_luck_index": 43.5,
+    "image": "86.png"
+  },
+  {
+    "id": 87,
+    "name": "Bank account frozen due to error",
+    "bad_luck_index": 44.0,
+    "image": "87.png"
+  },
+  {
+    "id": 88,
+    "name": "Rodents found in food storage",
+    "bad_luck_index": 44.5,
+    "image": "88.png"
+  },
+  {
+    "id": 89,
+    "name": "Local TV exposes your restaurant\u2019s hygiene",
+    "bad_luck_index": 45.0,
+    "image": "89.png"
+  },
+  {
+    "id": 90,
+    "name": "Health department closes you down",
+    "bad_luck_index": 45.5,
+    "image": "90.png"
+  },
+  {
+    "id": 91,
+    "name": "Major plumbing collapse",
+    "bad_luck_index": 46.0,
+    "image": "91.png"
+  },
+  {
+    "id": 92,
+    "name": "Social media scandal ruins brand",
+    "bad_luck_index": 46.5,
+    "image": "92.png"
+  },
+  {
+    "id": 93,
+    "name": "Fire burns down restaurant",
+    "bad_luck_index": 47.0,
+    "image": "93.png"
+  },
+  {
+    "id": 94,
+    "name": "Sued for wage theft (even if false)",
+    "bad_luck_index": 47.5,
+    "image": "94.png"
+  },
+  {
+    "id": 95,
+    "name": "Ingredient recall shuts down menu",
+    "bad_luck_index": 48.0,
+    "image": "95.png"
+  },
+  {
+    "id": 96,
+    "name": "Lease terminated without warning",
+    "bad_luck_index": 48.5,
+    "image": "96.png"
+  },
+  {
+    "id": 97,
+    "name": "All kitchen staff quits at once",
+    "bad_luck_index": 49.0,
+    "image": "97.png"
+  },
+  {
+    "id": 98,
+    "name": "Flood destroys interior",
+    "bad_luck_index": 49.5,
+    "image": "98.png"
+  },
+  {
+    "id": 99,
+    "name": "Entire business permanently shut down",
+    "bad_luck_index": 50.0,
+    "image": "99.png"
+  },
+  {
+    "id": 100,
+    "name": "You lose everything and have to start over",
+    "bad_luck_index": 100.0,
+    "image": "100.png"
+  }
+]
