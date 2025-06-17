@@ -27,7 +27,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use(express.urlencoded({ extended: true }));
-app.use(express.json()); // ✅ already present, but double check
+app.use(express.json()); 
 
 
 // serve card images
@@ -43,7 +43,7 @@ app.get('/api/cards/demo', async (req, res) => {
 
     const startCards = cards.slice(0, 3).sort((a, b) => a.bad_luck_index - b.bad_luck_index);
     const guessCard = { ...cards[3] };
-    delete guessCard.bad_luck_index; // hide it from the player
+    delete guessCard.bad_luck_index; 
 
     res.json({ startCards, guessCard });
   } catch (err) {
@@ -95,10 +95,9 @@ app.post('/api/games', async (req, res) => {
   try {
     const db = await openDB();
 
-    // TEMP: Fake user ID = 1 (we'll fix this with real login later)
-    const userId = 1;
+    const userId = req.user?.id;
+    if (!userId) return res.status(401).json({ error: 'Not authenticated' });
 
-    // Create a new game
     const now = new Date().toISOString();
     const gameRes = await db.run(
       'INSERT INTO games (user_id, start_time) VALUES (?, ?)',
@@ -108,12 +107,10 @@ app.post('/api/games', async (req, res) => {
 
     const gameId = gameRes.lastID;
 
-    // Select 3 unique random cards
     const starterCards = await db.all('SELECT * FROM cards ORDER BY RANDOM() LIMIT 3');
 
-    // Insert them into the rounds table (round_number 0)
     await Promise.all(
-      starterCards.map((card, index) =>
+      starterCards.map(card =>
         db.run(
           'INSERT INTO rounds (game_id, round_number, card_id, won) VALUES (?, ?, ?, ?)',
           gameId,
@@ -124,7 +121,6 @@ app.post('/api/games', async (req, res) => {
       )
     );
 
-    // Send back the new game ID and starter cards
     res.json({ gameId, starterCards });
   } catch (err) {
     console.error('Error in /api/games:', err);
@@ -132,10 +128,13 @@ app.post('/api/games', async (req, res) => {
   }
 });
 
+
 app.get('/api/games/current', async (req, res) => {
   try {
     const db = await openDB();
-    const userId = 1; // 🔐 TEMP: hardcoded for now
+    const userId = req.user?.id;
+    if (!userId) return res.status(401).json({ error: 'Not authenticated' });
+
 
     // Find latest active game
     const game = await db.get(`
@@ -213,10 +212,11 @@ app.post('/api/games/:id/rounds', async (req, res) => {
   const { cardId, guessIndex, startIndices } = req.body;
 
   if (
-    typeof cardId !== 'number' ||
-    typeof guessIndex !== 'number' ||
-    !Array.isArray(startIndices)
-  ) {
+  typeof cardId !== 'number' ||
+  (!Number.isInteger(guessIndex) && guessIndex !== null) ||
+  !Array.isArray(startIndices)
+)
+ {
     return res.status(400).json({ error: 'Invalid input data' });
   }
 
@@ -341,5 +341,65 @@ app.get('/api/games/:id/summary', async (req, res) => {
   } catch (err) {
     console.error('Error in /api/games/:id/summary:', err);
     res.status(500).json({ error: 'Failed to fetch game summary' });
+  }
+});
+
+app.get('/api/history', async (req, res) => {
+  try {
+    const db = await openDB();
+    const userId = req.user?.id;
+
+    if (!userId) return res.status(401).json({ error: 'Not authenticated' });
+
+    // Get user's games
+    const games = await db.all(`
+      SELECT id, start_time, end_time, outcome FROM games
+      WHERE user_id = ? AND outcome IS NOT NULL
+      ORDER BY start_time DESC
+    `, userId);
+
+
+    const history = [];
+
+    for (const game of games) {
+      const cards = await db.all(`
+        SELECT
+          c.name,
+          r.round_number,
+          r.won,
+          r.guessed_position
+        FROM rounds r
+        JOIN cards c ON r.card_id = c.id
+        WHERE r.game_id = ?
+        ORDER BY r.round_number ASC
+      `, game.id);
+
+      const detailed = cards.map(card => ({
+        name: card.name,
+        round: card.round_number > 0 ? card.round_number : null,
+        status:
+          card.round_number === 0
+            ? 'starter'
+            : card.won === 1
+              ? 'won'
+              : card.guessed_position === null
+                ? 'missed'
+                : 'wrong'
+      }));
+
+
+      history.push({
+        id: game.id,
+        outcome: game.outcome,
+        date: game.start_time,
+        cardCount: cards.filter(c => c.round_number === 0 || c.won).length,
+        cards: detailed
+      });
+    }
+
+    res.json({ history });
+  } catch (err) {
+    console.error('Error fetching game history:', err);
+    res.status(500).json({ error: 'Failed to load history' });
   }
 });
