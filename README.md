@@ -1,90 +1,80 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/ArqHNgsV)
-# Exam #1: "Stuff Happens"  
-## Student: s339366 Faridreza Momtaz Zandi
+# 🎴 Stuff Happens – Memory Card Game
+
+A web-based memory and strategy game where players try to survive the wrath of bad luck cards! Featuring both a guest demo mode and full game with progress tracking.
+
+### 👤 Author
+**Farid Zandi**  
+[faridmmz.github.io](https://faridmmz.github.io) | [GitHub](https://github.com/faridmmz) | [LinkedIn](https://linkedin.com/in/faridreza-momtazandi)
 
 ---
 
-## React Client Application Routes
+## 🚀 Features
 
-- Route `/`: Start page. Lets users try a demo or log in to play the full game or look at game history.
-- Route `/demo`: One-round demo game for guests using three random cards.
-- Route `/game`: Full game for registered users. Tracks rounds, guesses, lives, and summary.
-- Route `/history`: Displays completed games and all card outcomes per round.
-
----
-
-## API Server
-
-- `POST /api/login`  
-  - Body: `{ username, password }`  
-  - Logs in a registered user and starts session.
-
-- `GET /api/logout`  
-  - Clears the session and logs out the user.
-
-- `GET /api/session`  
-  - Returns `{ user }` if logged in, 401 otherwise.
-
-- `GET /api/cards/demo`  
-  - Returns 3 cards and 1 guess card for the demo game. No authentication required.
-
-- `POST /api/cards/check-guess`  
-  - Body: `{ guessIndex, startIndices, guessCardId }`  
-  - Returns whether the guess was correct.
-
-- `POST /api/games`  
-  - Creates a new full game for the logged-in user and selects 3 starter cards.
-
-- `GET /api/games/current`  
-  - Fetches the current active game, collected cards, and lives remaining.
-
-- `POST /api/games/:id/next`  
-  - Gets the next guess card (not used in previous rounds) for the given game ID.
-
-- `POST /api/games/:id/rounds`  
-  - Body: `{ cardId, guessIndex, startIndices }`  
-  - Saves the outcome of a round. Updates game status if won/lost.
-
-- `GET /api/games/:id/summary`  
-  - Returns the final outcome and all collected cards of the finished game.
-
-- `GET /api/history`  
-  - Returns all past games and the status of each round for the authenticated user.
+- 🧠 **Demo Mode**: Quick one-round game with randomized cards.
+- 🕹️ **Full Game**: Multi-round memory game for registered users.
+- 📜 **Game History**: View past matches and card outcomes.
+- 🔐 **Authentication**: User login and session management.
 
 ---
 
-## Database Tables
+## 🗂️ Tech Stack
 
-- Table `users`: Stores registered users with fields `id`, `username`, `email`, hashed `password`, name.
-- Table `cards`: Stores all 100 cards with `id`, `name`, `image`, and `bad_luck_index`.  
-- Table `games`: Tracks each game session with `id`, `user_id`, `start_time`, `end_time`, and `outcome`.
-- Table `rounds`: Stores each round of a game with `id `, `game_id`, `round_number`, `card_id`, `won`, and `guessed_position`.
-
----
-
-## Main React Components
-
-- `Home` (in `Home.jsx`): Entry page with login, logout, and navigation to Demo or Full Game and history for the loged in user.
-- `DemoGame` (in `DemoGame.jsx`): Handles demo logic with cards, timer, and result feedback.
-- `FullGame` (in `FullGame.jsx`): Manages full game logic, round flow, UI layout, lives, timer, and end summary.
-- `GameHistory` (in `GameHistory.jsx`): Displays previous games with round-by-round outcomes.
-- `LoginForm` (in `LoginForm.jsx`): Form for username/password authentication.
-- `AuthContext` (in `AuthContext.jsx`): Global user state and session management.
+- **Frontend**: React (Vite), Context API
+- **Backend**: Node.js, Express.js
+- **Database**: SQLite with Sequelize ORM
+- **Authentication**: Sessions with Passport.js
 
 ---
 
-## Screenshots
+## 🧩 Core Routes and Components
+
+### Frontend Routes:
+- `/` – Landing page (play demo or log in)
+- `/demo` – Demo game
+- `/game` – Full game (authenticated)
+- `/history` – Game history (authenticated)
+
+### Key Components:
+- `Home`, `DemoGame`, `FullGame`, `GameHistory`, `LoginForm`, `AuthContext`
+
+---
+
+## 🔧 Backend API Overview
+
+- `POST /api/login` – Log in
+- `GET /api/logout` – Log out
+- `GET /api/session` – Check session
+- `GET /api/cards/demo` – Demo cards
+- `POST /api/cards/check-guess` – Check guess
+- `POST /api/games` – Start game
+- `POST /api/games/:id/next` – Next guess card
+- `POST /api/games/:id/rounds` – Save round
+- `GET /api/games/:id/summary` – End summary
+- `GET /api/history` – Game history
+
+---
+
+## 🖼️ Screenshots
 
 ### 🎮 Game in Progress
 ![Gameplay Screenshot](Screenshot_GameInProgress.png)
 
-### 📜 User History
+### 📜 Game History
 ![History Screenshot](Screenshot_History.png)
 
 ---
 
-## Users Credentials
+## 🧪 Testing Credentials
 
-- username:`faridmmz`, password: `1234`
-- username:`sinashariati`, password: `123457`
+- Username: `faridmmz` | Password: `1234`
 
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/faridmmz/stuff-happens-game
+cd stuff-happens-game
+npm install
+npm run dev
