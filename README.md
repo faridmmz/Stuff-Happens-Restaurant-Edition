@@ -1,6 +1,6 @@
 # 🎴 Stuff Happens – Memory Card Game
 
-A web-based memory and strategy game where players try to survive the wrath of bad luck cards! Featuring both a guest demo mode and full game with progress tracking.
+A web-based memory and strategy game where players try to find the best place of a bad luck situation in a stack of inconveniences disasters! Featuring both a guest demo mode and full game with progress tracking.
 
 ### 👤 Author
 **Farid Zandi**  
