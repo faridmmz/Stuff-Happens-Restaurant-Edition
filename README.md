@@ -74,7 +74,11 @@ A web-based memory and strategy game where players try to survive the wrath of b
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/faridmmz/stuff-happens-game
-cd stuff-happens-game
+git clone https://github.com/faridmmz/stuff-happens-restaurant-edition
+cd stuff-happens-restaurant-edition
 npm install
+cd server
+nodemon index.mjs
+cd ..
+cd client
 npm run dev
